@@ -40,7 +40,7 @@ function Header() {
             <div className="block sm:hidden">
               <button
                 onClick={toggleMenu}
-                className="text-gray-900 hover:text-blue-500 focus:outline-none focus:text-blue-500"
+                className="text-gray-900 hover:text-white focus:outline-none focus:text-white bg-blue-500 p-2 rounded"
               >
                 {/* Icône du bouton burger (ouverture/fermeture) */}
                 <svg className="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -55,35 +55,37 @@ function Header() {
             {/* Liste des liens de navigation */}
             <ul
               ref={menuRef}
-              className={`flex-col sm:flex sm:flex-row sm:space-x-4 fixed top-0 left-0 w-full bg-customBlue transform transition-transform duration-300 ease-in-out ${isOpen ? 'translate-y-0' : '-translate-y-full'} sm:static sm:translate-y-0 sm:bg-transparent sm:flex-row sm:space-x-4`}
+              className={`flex-col sm:flex sm:flex-row sm:space-x-4 fixed top-0 left-0 w-full bg-blue-500 transform transition-transform duration-300 ease-in-out ${
+                isOpen ? 'translate-y-0' : '-translate-y-full'
+              } sm:static sm:translate-y-0 sm:bg-transparent sm:flex-row sm:space-x-4`}
             >
               {/* Lien Accueil */}
               <li className="mt-16 sm:mt-0">
-                <Link to="/Accueil" className="text-gray-900 hover:text-blue-500 font-thin block px-3 py-2 rounded-md">
+                <Link to="/Accueil" className="text-gray-900 hover:text-white font-thin block px-3 py-2 rounded-md">
                   Accueil
                 </Link>
               </li>
               {/* Lien Playstation */}
               <li className="mt-2 sm:mt-0">
-                <Link to="/Playstation" className="text-gray-900 hover:text-blue-500 font-thin block px-3 py-2 rounded-md">
+                <Link to="/Playstation" className="text-gray-900 hover:text-white font-thin block px-3 py-2 rounded-md">
                   Playstation
                 </Link>
               </li>
               {/* Lien Xbox */}
               <li className="mt-2 sm:mt-0">
-                <Link to="/Xbox" className="text-gray-900 hover:text-blue-500 font-thin block px-3 py-2 rounded-md">
+                <Link to="/Xbox" className="text-gray-900 hover:text-white font-thin block px-3 py-2 rounded-md">
                   Xbox
                 </Link>
               </li>
               {/* Lien Switch */}
               <li className="mt-2 sm:mt-0">
-                <Link to="/Switch" className="text-gray-900 hover:text-blue-500 font-thin block px-3 py-2 rounded-md">
+                <Link to="/Switch" className="text-gray-900 hover:text-white font-thin block px-3 py-2 rounded-md">
                   Switch
                 </Link>
               </li>
               {/* Lien Contacter-nous */}
               <li className="mt-2 sm:mt-0 mb-10 sm:mb-0">
-                <Link to="/Formulaire" className="text-gray-900 hover:text-blue-500 font-thin block px-3 py-2 rounded-md">
+                <Link to="/Formulaire" className="text-gray-900 hover:text-white font-thin block px-3 py-2 rounded-md">
                   Contacter-nous
                 </Link>
               </li>
