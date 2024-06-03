@@ -42,7 +42,7 @@ function AffichageDonnee() {
           className="w-full p-4 bg-gray-200 text-black rounded-full focus:outline-none focus:ring-2 focus:ring-blue-500 mb-4"
         />
       </form>
-      <div className="mb-4 flex space-x-2">
+      <div className="mb-4 flex space-x-2 ">
         <button 
           className={`bg-blue-500 hover:bg-blue-700 text-white px-3 py-1 rounded-full ${consoleType === 'PS4' ? 'opacity-50' : ''}`}
           onClick={() => handleConsoleFilter('PS4')}
@@ -59,7 +59,7 @@ function AffichageDonnee() {
           className="bg-blue-500 hover:bg-blue-700 text-white px-3 py-1 rounded-full"
           onClick={clearFilter}
         >
-          Tout Console
+          ToutConsole
         </button>
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 w-full">

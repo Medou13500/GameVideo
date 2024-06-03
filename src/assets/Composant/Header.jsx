@@ -59,6 +59,18 @@ function Header() {
                 isOpen ? 'translate-y-0' : '-translate-y-full'
               } sm:static sm:translate-y-0 sm:bg-transparent sm:flex-row sm:space-x-4`}
             >
+              {isOpen && (
+                <div className="absolute top-4 right-4">
+                  <button
+                    onClick={toggleMenu}
+                    className="text-gray-900 hover:text-white focus:outline-none focus:text-white bg-blue-500 p-2 rounded"
+                  >
+                    <svg className="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                  </button>
+                </div>
+              )}
               {/* Lien Accueil */}
               <li className="mt-16 sm:mt-0">
                 <Link to="/Accueil" className="text-gray-900 hover:text-white font-thin block px-3 py-2 rounded-md">

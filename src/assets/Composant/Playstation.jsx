@@ -9,7 +9,6 @@ function Playstation() {
       <Header />
    <AffichageDonnee/>
       
-    
       <div className="p-4 mt-16">
        
       </div>
